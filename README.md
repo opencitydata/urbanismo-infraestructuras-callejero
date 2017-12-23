@@ -1,3 +1,11 @@
+Este repositorio contiene el material relacionado con el vocabulario sobre callejero para España, que se identifica (y publica) en la siguiente URI: http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero
+
+La primera versin de este vocabulario fue creada en el año 2014. El historial de cambios, así como los issues que se generaron para esta primera versión, fueron gestionados en el repositorio general sobre datos abiertos que se encuentra en https://github.com/opencitydata/vocabularios-datos-abiertos, y que se encuentra en estado deprecated, dado que posterioremente se decidió crear un repositorio en GitHub por cada uno de los vocabularios con los que se estaba trabajando, por comodidad.
+
+Por tanto, los issues que se abrieron serán abiertos de nuevo, con fecha posterior, para mantener la traza de los mismos, en la evolución de este vocabulario que se está realizando en los años 2017 y 2018.
+
+A continuación se muestran también los datos originales obtenidos del grupo de trabajo OjoAlData100, que identificó este vocabulario como uno de los prioritarios.
+
 ### Núm
 163
 ### Clasificación NTI
