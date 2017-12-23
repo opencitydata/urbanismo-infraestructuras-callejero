@@ -1,0 +1,393 @@
+[
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 1 to Term1",
+    "oldColumnName": "Column 1",
+    "newColumnName": "Term1"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 2 to Term2",
+    "oldColumnName": "Column 2",
+    "newColumnName": "Term2"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 3 to Completo",
+    "oldColumnName": "Column 3",
+    "newColumnName": "Completo"
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Term1 using expression value.trim()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Term1",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Term2 using expression value.trim()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Term2",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Completo using expression value.trim()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Completo",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via/",
+      "prefixes": [
+        {
+          "name": "dc",
+          "uri": "http://purl.org/dc/terms/"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "prov",
+          "uri": "http://www.w3.org/ns/prov#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "skos",
+          "uri": "http://www.w3.org/2004/02/skos/core#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "Term1",
+          "rdfTypes": [
+            {
+              "uri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "curie": "skos:Concept"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.w3.org/2004/02/skos/core#inScheme",
+              "curie": "skos:inScheme",
+              "target": {
+                "nodeType": "resource",
+                "value": "http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via",
+                "rdfTypes": [
+                  {
+                    "uri": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+                    "curie": "skos:ConceptScheme"
+                  },
+                  {
+                    "uri": "http://www.w3.org/ns/prov#Entity",
+                    "curie": "prov:Entity"
+                  }
+                ],
+                "links": [
+                  {
+                    "uri": "http://www.w3.org/2004/02/skos/core#hasTopConcept",
+                    "curie": "skos:hasTopConcept",
+                    "target": {
+                      "nodeType": "cell-as-resource",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "columnName": "Term1",
+                      "rdfTypes": [],
+                      "links": []
+                    }
+                  },
+                  {
+                    "uri": "http://purl.org/dc/terms/creator",
+                    "curie": "dc:creator",
+                    "target": {
+                      "nodeType": "literal",
+                      "value": "Oscar Corcho (Universidad Politécnica de Madrid)"
+                    }
+                  },
+                  {
+                    "uri": "http://purl.org/dc/terms/date",
+                    "curie": "dc:date",
+                    "target": {
+                      "nodeType": "literal",
+                      "value": "2014-07-21",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#date"
+                    }
+                  },
+                  {
+                    "uri": "http://purl.org/dc/terms/title",
+                    "curie": "dc:title",
+                    "target": {
+                      "nodeType": "literal",
+                      "value": "Clasificación de vías según la categorización del INE",
+                      "lang": "es"
+                    }
+                  },
+                  {
+                    "uri": "http://www.w3.org/ns/prov#hadPrimarySource",
+                    "curie": "prov:hadPrimarySource",
+                    "target": {
+                      "nodeType": "resource",
+                      "value": "http://www.ine.es/ss/Satellite?blobcol=urldata&blobheader=text%2Fplain&blob headername1=Content-Disposition&blobheadervalue1=attachment%3B+filename%3Dt ipovias.txt&blobkey=urldata&blobtable=MungoBlobs&blobwhere=603%2F266%2Ftipo vias.txt&ssbinary=true",
+                      "rdfTypes": [],
+                      "links": []
+                    }
+                  },
+                  {
+                    "uri": "http://www.w3.org/ns/prov#wasAttributedTo",
+                    "curie": "prov:wasAttributedTo",
+                    "target": {
+                      "nodeType": "resource",
+                      "value": "http://www.linkedin.com/in/ocorcho",
+                      "rdfTypes": [],
+                      "links": []
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2004/02/skos/core#exactMatch",
+              "curie": "skos:exactMatch",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "if(value==cells[\"Term1\"].value,null,value)",
+                "isRowNumberCell": false,
+                "columnName": "Term2",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2004/02/skos/core#prefLabel",
+              "curie": "skos:prefLabel",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Completo"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2004/02/skos/core#notation",
+              "curie": "skos:notation",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Term1"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via/",
+      "prefixes": [
+        {
+          "name": "dc",
+          "uri": "http://purl.org/dc/terms/"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "prov",
+          "uri": "http://www.w3.org/ns/prov#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "skos",
+          "uri": "http://www.w3.org/2004/02/skos/core#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "Term1",
+          "rdfTypes": [
+            {
+              "uri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "curie": "skos:Concept"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.w3.org/2004/02/skos/core#inScheme",
+              "curie": "skos:inScheme",
+              "target": {
+                "nodeType": "resource",
+                "value": "http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via",
+                "rdfTypes": [
+                  {
+                    "uri": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+                    "curie": "skos:ConceptScheme"
+                  },
+                  {
+                    "uri": "http://www.w3.org/ns/prov#Entity",
+                    "curie": "prov:Entity"
+                  }
+                ],
+                "links": [
+                  {
+                    "uri": "http://www.w3.org/2004/02/skos/core#hasTopConcept",
+                    "curie": "skos:hasTopConcept",
+                    "target": {
+                      "nodeType": "cell-as-resource",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "columnName": "Term1",
+                      "rdfTypes": [],
+                      "links": []
+                    }
+                  },
+                  {
+                    "uri": "http://purl.org/dc/terms/creator",
+                    "curie": "dc:creator",
+                    "target": {
+                      "nodeType": "literal",
+                      "value": "Oscar Corcho (Universidad Politécnica de Madrid)"
+                    }
+                  },
+                  {
+                    "uri": "http://purl.org/dc/terms/date",
+                    "curie": "dc:date",
+                    "target": {
+                      "nodeType": "literal",
+                      "value": "2014-07-21",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#date"
+                    }
+                  },
+                  {
+                    "uri": "http://purl.org/dc/terms/title",
+                    "curie": "dc:title",
+                    "target": {
+                      "nodeType": "literal",
+                      "value": "Clasificación de vías según la categorización del INE",
+                      "lang": "es"
+                    }
+                  },
+                  {
+                    "uri": "http://www.w3.org/ns/prov#wasAttributedTo",
+                    "curie": "prov:wasAttributedTo",
+                    "target": {
+                      "nodeType": "resource",
+                      "value": "http://www.linkedin.com/in/ocorcho",
+                      "rdfTypes": [],
+                      "links": []
+                    }
+                  },
+                  {
+                    "uri": "http://www.w3.org/ns/prov#hadPrimarySource",
+                    "curie": "prov:hadPrimarySource",
+                    "target": {
+                      "nodeType": "resource",
+                      "value": "http://bit.ly/1uYcNCO",
+                      "rdfTypes": [],
+                      "links": []
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2004/02/skos/core#exactMatch",
+              "curie": "skos:exactMatch",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "if(value==cells[\"Term1\"].value,null,value)",
+                "isRowNumberCell": false,
+                "columnName": "Term2",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2004/02/skos/core#prefLabel",
+              "curie": "skos:prefLabel",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Completo"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2004/02/skos/core#notation",
+              "curie": "skos:notation",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Term1"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+]
