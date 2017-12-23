@@ -1,0 +1,13 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero/0.3> a prov:Entity;
+	 dc:title "Vocabulario para la representación de datos de un callejero";
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name "Jesús Vera (Ayuntamiento de Pamplona)".];
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name "Manuel Tobarra (Ayuntamiento de Albacete)".];
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name "María Jesús Fernández (Ayuntamiento de Zaragoza)".];
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name "Oscar Corcho (Ontology Engineering Group, Universidad Politécnica de Madrid)".];
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name "Víctor Morlán (Ayuntamiento de Zaragoza)".];
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:wasRevisionOf <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero_20140321>;
+.
