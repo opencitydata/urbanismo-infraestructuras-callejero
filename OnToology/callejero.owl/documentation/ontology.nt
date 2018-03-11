@@ -1,5 +1,5 @@
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <http://www.w3.org/2002/07/owl#versionIRI> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero/0.3> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <http://www.w3.org/2002/07/owl#versionIRI> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero_v0.3> .
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <http://creativecommons.org/ns#license> <http://creativecommons.org/licenses/by/4.0/> .
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <http://purl.org/dc/elements/1.1/creator> "Jes\u00FAs Vera (Ayuntamiento de Pamplona)" .
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <http://purl.org/dc/elements/1.1/creator> "Manuel Tobarra (Ayuntamiento de Albacete)" .
