@@ -7,7 +7,7 @@
 @base <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> .
 
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> rdf:type owl:Ontology ;
-                                                                                     owl:versionIRI <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero/0.3> ;
+                                                                                     owl:versionIRI <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero_v0.3> ;
                                                                                      <http://creativecommons.org/ns#license> <http://creativecommons.org/licenses/by/4.0/> ;
                                                                                      <http://purl.org/dc/elements/1.1/creator> "Jesús Vera (Ayuntamiento de Pamplona)"^^xsd:string ,
                                                                                                                                "Manuel Tobarra (Ayuntamiento de Albacete)"^^xsd:string ,
@@ -18,8 +18,7 @@
                                                                                      <http://purl.org/dc/elements/1.1/identifier> "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero"^^xsd:string ;
                                                                                      <http://purl.org/dc/elements/1.1/rights> "Creative Commons Attribution 4.0 International (CC BY 4.0)"^^xsd:string ;
                                                                                      <http://purl.org/dc/elements/1.1/title> "Vocabulario para la representación de datos de un callejero"@es ;
-                                                                                     <http://purl.org/dc/terms/hasFormat> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero.html> ,
-                                                                                                                          <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero.rdf> ;
+                                                                                     <http://purl.org/dc/terms/hasFormat> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero.html> ;
                                                                                      <http://purl.org/dc/terms/issued> "2014-04-28"^^xsd:dateTime ;
                                                                                      <http://purl.org/dc/terms/replaces> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero_20140321> ;
                                                                                      <http://purl.org/vocab/vann/preferredNamespaceUri> : ;
