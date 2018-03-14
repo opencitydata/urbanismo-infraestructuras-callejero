@@ -66,6 +66,7 @@ Este vocabulario también se ha inspirado en el trabajo realizado previamente po
         <dc:creator>Víctor Morlán (Ayuntamiento de Zaragoza)</dc:creator>
         <cc:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:hasFormat rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero.html"/>
+	<dcterms:hasFormat rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero.owl"/>
         <dcterms:replaces rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero_20140321"/>
         <vann:preferredNamespaceUri rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#"/>
         <owl:versionIRI rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero_v0.3"/>
