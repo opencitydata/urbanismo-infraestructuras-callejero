@@ -1,5 +1,5 @@
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <http://www.w3.org/2002/07/owl#versionIRI> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero/0.3> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <http://www.w3.org/2002/07/owl#versionIRI> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero_v0.3> .
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <http://creativecommons.org/ns#license> <http://creativecommons.org/licenses/by/4.0/> .
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <http://purl.org/dc/elements/1.1/creator> "Jes\u00FAs Vera (Ayuntamiento de Pamplona)" .
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <http://purl.org/dc/elements/1.1/creator> "Manuel Tobarra (Ayuntamiento de Albacete)" .
@@ -11,7 +11,7 @@
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <http://purl.org/dc/elements/1.1/rights> "Creative Commons Attribution 4.0 International (CC BY 4.0)" .
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <http://purl.org/dc/elements/1.1/title> "Vocabulario para la representaci\u00F3n de datos de un callejero"@es .
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <http://purl.org/dc/terms/hasFormat> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero.html> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <http://purl.org/dc/terms/hasFormat> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero.rdf> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <http://purl.org/dc/terms/hasFormat> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero.owl> .
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <http://purl.org/dc/terms/issued> "2014-04-28"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <http://purl.org/dc/terms/replaces> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero_20140321> .
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <http://purl.org/vocab/vann/preferredNamespaceUri> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#> .
