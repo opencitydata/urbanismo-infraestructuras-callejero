@@ -1,8 +1,17 @@
-Este repositorio contiene el material relacionado con el vocabulario sobre callejero para España, que se identifica (y publica) en la siguiente URI: http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero
+# urbanismo-infraestructuras-callejero
+Este repositorio contiene el material relacionado con el vocabulario sobre callejero para España, que se identifica (y publica) en la siguiente URI:
 
-La primera versión de este vocabulario fue creada en el año 2014. El historial de cambios, así como los issues que se generaron para esta primera versión, fueron gestionados en el repositorio general sobre datos abiertos que se encuentra en https://github.com/opencitydata/vocabularios-datos-abiertos, y que se encuentra en estado deprecated, dado que posterioremente se decidió crear un repositorio en GitHub por cada uno de los vocabularios con los que se estaba trabajando, por comodidad.
+http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero
 
-Por tanto, los issues que se abrieron serán abiertos de nuevo, con fecha posterior, para mantener la traza de los mismos, en la evolución de este vocabulario que se está realizando en el año 2018.
+La primera versión de este vocabulario fue publicada en marzo del año 2014. El historial de cambios, así como los issues que se generaron para esta primera versión, fueron gestionados en el repositorio general sobre datos abiertos que se encuentra en https://github.com/opencitydata/vocabularios-datos-abiertos, y que se encuentra en estado *deprecated*, dado que posterioremente se decidió crear un repositorio en GitHub por cada uno de los vocabularios con los que se estaba trabajando, por comodidad.
+
+Por tanto, se pretende con esto llevar un control de cambios entre versiones.
+
+### Lista de cambios:
+* [12/03/2018] Actualización de referencias a las URIs donde se encuentra publicada la última versión.
+* [03/05/2018] Aceptado pull request de OnToology para actualizar la documentación [[OnToology update #12]](https://github.com/opencitydata/urbanismo-infraestructuras-callejero/pull/12)
+* [03/05/2018] Solucionado el error *"Missing disjointness"* generado por la evaluación OOPS! entre las clases de la ontología [[OOPS! Evaluation for callejero.owl #10]](https://github.com/opencitydata/urbanismo-infraestructuras-callejero/issues/10)
+
 
 A continuación se muestran también los datos originales obtenidos del grupo de trabajo OjoAlData100, que identificó este vocabulario como uno de los prioritarios.
 
