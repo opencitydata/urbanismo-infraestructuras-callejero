@@ -334,6 +334,8 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
         <dcterms:issued rdf:datatype="&xsd;dateTime">2013-03-28</dcterms:issued>
         <rdfs:comment xml:lang="es">Subacceso independiente exterior (al aire libre) a una misma construcción. Para una misma construcción, con un mismo número de vía, pueden existir varias entradas que pueden estar numeradas con números o letras. [fuente: Modelo de Direcciones de la Administración General del Estado v.2]</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero"/>
+	<owl:disjointWith rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#TramoVia"/>
+	<owl:disjointWith rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via"/>
     </owl:Class>
     
 
@@ -358,6 +360,8 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
         <dcterms:issued rdf:datatype="&xsd;dateTime">2013-03-28</dcterms:issued>
         <rdfs:comment xml:lang="es">Tramo parcial o total de una vía</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero"/>
+	<owl:disjointWith rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Portal"/>
+	<owl:disjointWith rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via"/>
     </owl:Class>
     
 
@@ -386,6 +390,8 @@ En nuestro caso, este término se utiliza para hacer referencia a las vías urba
 
 Por esta razón, se utiliza geonames:R.ST como valor principal de la propiedad geonames:featureCode, dejando de lado otras opciones como R.PRMN (promenade), R.TRL (trail). Quizás en el futuro haya que relajar un poco esta opción, sobre todo, por ejemplo, para ciudades con costa y paseo marítimo.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero"/>
+	<owl:disjointWith rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Portal"/>
+	<owl:disjointWith rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#TramoVia"/>
     </owl:Class>
     
 
