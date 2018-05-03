@@ -204,6 +204,8 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
 ###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Portal
 :Portal rdf:type owl:Class ;
         rdfs:subClassOf <http://www.geonames.org/ontology#Feature> ;
+        owl:disjointWith :TramoVia ,
+                         :Via ;
         <http://purl.org/dc/terms/issued> "2013-03-28"^^xsd:dateTime ;
         rdfs:comment "Subacceso independiente exterior (al aire libre) a una misma construcción. Para una misma construcción, con un mismo número de vía, pueden existir varias entradas que pueden estar numeradas con números o letras. [fuente: Modelo de Direcciones de la Administración General del Estado v.2]"@es ;
         rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> ;
@@ -221,6 +223,7 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
                             owl:onProperty <http://www.geonames.org/ontology#featureCode> ;
                             owl:hasValue <http://www.geonames.org/ontology#R.ST>
                           ] ;
+          owl:disjointWith :Via ;
           <http://purl.org/dc/terms/issued> "2013-03-28"^^xsd:dateTime ;
           rdfs:comment "Tramo parcial o total de una vía"@es ;
           rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> ;
