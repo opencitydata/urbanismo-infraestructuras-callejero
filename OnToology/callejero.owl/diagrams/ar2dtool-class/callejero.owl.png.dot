@@ -1,25 +1,31 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "skos:Concept" "geonames:Feature" "escjr:Via" "escjr:TramoVia" ; /*classes style*/
+node [shape = rectangle, color="orange"]; "skos:Concept" "geonames:Feature" "escjr:Via" "escjr:TramoVia" "escjr:Portal" ; /*classes style*/
+	"escjr:contienePortal" -> "geosparql:sfContains" [ label = "rdfs:subPropertyOf" ];
+	"escjr:contienePortal" -> "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero" [ label = "rdfs:comment" ];
 	"http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero" -> "escjr:" [ label = "vann:preferredNamespaceUri" ];
 	"http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero" -> "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero.owl" [ label = "dcterms:hasFormat" ];
 	"http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero" -> "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero.html" [ label = "dcterms:hasFormat" ];
 	"http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero" -> "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero_v0.3" [ label = "owl:versionIRI" ];
 	"http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero" -> "http://creativecommons.org/licenses/by/4.0/" [ label = "cc:license" ];
 	"http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero" -> "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero_20140321" [ label = "dcterms:replaces" ];
-	"escjr:contienePortal" -> "geosparql:sfContains" [ label = "rdfs:subPropertyOf" ];
-	"escjr:contienePortal" -> "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero" [ label = "rdfs:comment" ];
-	"escjr:contieneVia" -> "geosparql:sfContains" [ label = "rdfs:subPropertyOf" ];
+	"escjr:Portal" -> "escjr:Via" [ label = "owl:disjointWith" ];
+	"escjr:Portal" -> "escjr:TramoVia" [ label = "owl:disjointWith" ];
+	"escjr:TramoVia" -> "escjr:Via" [ label = "owl:disjointWith" ];
+	"escjr:TramoVia" -> "escjr:Portal" [ label = "owl:disjointWith" ];
 	"geonames:featureCode" -> "dcterms:type" [ label = "rdfs:subPropertyOf" ];
+	"escjr:contieneVia" -> "geosparql:sfContains" [ label = "rdfs:subPropertyOf" ];
 	"geonames:featureClass" -> "dcterms:type" [ label = "rdfs:subPropertyOf" ];
-	"escjr:via" -> "geosparql:sfWithin" [ label = "rdfs:subPropertyOf" ];
+	"escjr:Via" -> "escjr:Portal" [ label = "owl:disjointWith" ];
+	"escjr:Via" -> "escjr:TramoVia" [ label = "owl:disjointWith" ];
 	"escjr:tramoVia" -> "geosparql:sfWithin" [ label = "rdfs:subPropertyOf" ];
+	"escjr:via" -> "geosparql:sfWithin" [ label = "rdfs:subPropertyOf" ];
 	"escjr:contieneTramoVia" -> "geosparql:sfContains" [ label = "rdfs:subPropertyOf" ];
-	"NULL" -> "geonames:R.ST" [ label = "owl:hasValue" ];
-	"NULL" -> "geonames:featureCode" [ label = "owl:onProperty" ];
 	"NULL" -> "geonames:R" [ label = "owl:hasValue" ];
 	"NULL" -> "geonames:featureClass" [ label = "owl:onProperty" ];
+	"NULL" -> "geonames:R.ST" [ label = "owl:hasValue" ];
+	"NULL" -> "geonames:featureCode" [ label = "owl:onProperty" ];
 	"escjr:TramoVia" -> "xsd:string" [ label = "escjr:numeroFinTramo" ];
 	"owl:Thing" -> "escjr:TramoVia" [ label = "escjr:contieneTramoVia" ];
 	"escjr:TramoVia" -> "xsd:string" [ label = "escjr:numeroInicioTramo" ];

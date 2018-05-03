@@ -184,6 +184,8 @@
 # http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Portal
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Portal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Portal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.geonames.org/ontology#Feature> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Portal> <http://www.w3.org/2002/07/owl#disjointWith> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#TramoVia> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Portal> <http://www.w3.org/2002/07/owl#disjointWith> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via> .
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Portal> <http://purl.org/dc/terms/issued> "2013-03-28"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Portal> <http://www.w3.org/2000/01/rdf-schema#comment> "Subacceso independiente exterior (al aire libre) a una misma construcci\u00F3n. Para una misma construcci\u00F3n, con un mismo n\u00FAmero de v\u00EDa, pueden existir varias entradas que pueden estar numeradas con n\u00FAmeros o letras. [fuente: Modelo de Direcciones de la Administraci\u00F3n General del Estado v.2]"@es .
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Portal> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> .
@@ -200,6 +202,7 @@ _:genid1 <http://www.w3.org/2002/07/owl#hasValue> <http://www.geonames.org/ontol
 _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.geonames.org/ontology#featureCode> .
 _:genid2 <http://www.w3.org/2002/07/owl#hasValue> <http://www.geonames.org/ontology#R.ST> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#TramoVia> <http://www.w3.org/2002/07/owl#disjointWith> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via> .
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#TramoVia> <http://purl.org/dc/terms/issued> "2013-03-28"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#TramoVia> <http://www.w3.org/2000/01/rdf-schema#comment> "Tramo parcial o total de una v\u00EDa"@es .
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#TramoVia> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> .
