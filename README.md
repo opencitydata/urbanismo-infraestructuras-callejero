@@ -11,6 +11,7 @@ Por tanto, se pretende con esto llevar un control de cambios entre versiones.
 * [12/03/2018] Actualización de referencias a las URIs donde se encuentra publicada la última versión.
 * [03/05/2018] Aceptado pull request de OnToology para actualizar la documentación [[OnToology update #12]](https://github.com/opencitydata/urbanismo-infraestructuras-callejero/pull/12)
 * [03/05/2018] Solucionado el error *"Missing disjointness"* generado por la evaluación OOPS! entre las clases de la ontología [[OOPS! Evaluation for callejero.owl #10]](https://github.com/opencitydata/urbanismo-infraestructuras-callejero/issues/10)
+* [12/05/2018] Generada la documentación como estaba publicada y reorganización de carpetas
 
 
 A continuación se muestran también los datos originales obtenidos del grupo de trabajo OjoAlData100, que identificó este vocabulario como uno de los prioritarios.
