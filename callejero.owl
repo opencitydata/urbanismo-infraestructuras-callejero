@@ -63,6 +63,11 @@ Este vocabulario también se ha inspirado en el trabajo realizado previamente po
         <dc:creator>Oscar Corcho (Ontology Engineering Group, Universidad Politécnica de Madrid)</dc:creator>
         <dc:creator>María Jesús Fernández (Ayuntamiento de Zaragoza)</dc:creator>
         <dc:title xml:lang="es">Vocabulario para la representación de datos de un callejero</dc:title>
+		<dc:description>Este vocabulario se utiliza para la descripción del callejero de una ciudad. Reutiliza términos de varios vocabularios que actualmente se utilizan para propósitos similares, incluyendo:
+- schema.org
+- GeoSPARQL
+- GeoNames
+- Unidades territoriales en España</dc:description>
         <dc:creator>Víctor Morlán (Ayuntamiento de Zaragoza)</dc:creator>
         <cc:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:hasFormat rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero.html"/>
