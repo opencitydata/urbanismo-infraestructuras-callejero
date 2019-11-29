@@ -13,6 +13,7 @@ Por tanto, se pretende con esto llevar un control de cambios entre versiones.
 * [03/05/2018] Solucionado el error *"Missing disjointness"* generado por la evaluación OOPS! entre las clases de la ontología [[OOPS! Evaluation for callejero.owl #10]](https://github.com/opencitydata/urbanismo-infraestructuras-callejero/issues/10)
 * [12/05/2018] Reorganización de carpetas
 * [18/05/2018] Regenerada la documentación que estaba publicada [[Actualización de documentación]](https://github.com/opencitydata/urbanismo-infraestructuras-callejero/commit/bcf39cc760f9098242c124fe79cb26fd577e9c66)
+* [29/11/2019] Añadida una propiedad para hacer referencia a portales desde cualquier elemento, así como la clase PseudoVia, y actualizadas las clases y propiedades relacionadas con los tramos de vía, para referirse de manera general a Tramo
 
 
 A continuación se muestran también los datos originales obtenidos del grupo de trabajo OjoAlData100, que identificó este vocabulario como uno de los prioritarios.
