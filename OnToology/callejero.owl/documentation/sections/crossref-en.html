@@ -1,7 +1,7 @@
-<h2  id="crossreference" class="list">Cross reference for Callejero classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<html><h2 id="crossreference" class="list">Cross reference for Callejero classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 This section provides details for each class and property defined by Callejero.
 <div id="classes">
-   <h3 id="classes" class="list">Classes</h3>
+   <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
       <li>
          <a href="#http://www.geonames.org/ontology#Feature" title="http://www.geonames.org/ontology#Feature">
@@ -73,6 +73,12 @@ This section provides details for each class and property defined by Callejero.
             <a href="#http://www.geonames.org/ontology#Feature" title="http://www.geonames.org/ontology#Feature">feature</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#portal"
+               title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#portal">portal</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
          <dt>is disjoint with</dt>
          <dd>
             <a href="#TramoVia"
@@ -104,18 +110,6 @@ This section provides details for each class and property defined by Callejero.
          <dd>
             <a href="#http://www.geonames.org/ontology#Feature" title="http://www.geonames.org/ontology#Feature">feature</a>
             <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dd>
-            <a href="#http://www.geonames.org/ontology#featureClass" title="http://www.geonames.org/ontology#featureClass">Clase del fenómeno</a>
-            <sup class="type-op" title="object property">op</sup> 
-            <span class="logic">value</span> 
-            <a href="#http://www.geonames.org/ontology#R" title="http://www.geonames.org/ontology#R">r</a>
-         </dd>
-         <dd>
-            <a href="#http://www.geonames.org/ontology#featureCode" title="http://www.geonames.org/ontology#featureCode">código del fenómeno</a>
-            <sup class="type-op" title="object property">op</sup> 
-            <span class="logic">value</span> 
-            <a href="#http://www.geonames.org/ontology#R.ST" title="http://www.geonames.org/ontology#R.ST">r. s t</a>
          </dd>
          <dt>is in domain of</dt>
          <dd>
@@ -168,18 +162,6 @@ Por esta razón, se utiliza geonames:R.ST como valor principal de la propiedad g
          <dd>
             <a href="#http://www.geonames.org/ontology#Feature" title="http://www.geonames.org/ontology#Feature">feature</a>
             <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dd>
-            <a href="#http://www.geonames.org/ontology#featureClass" title="http://www.geonames.org/ontology#featureClass">Clase del fenómeno</a>
-            <sup class="type-op" title="object property">op</sup> 
-            <span class="logic">value</span> 
-            <a href="#http://www.geonames.org/ontology#R" title="http://www.geonames.org/ontology#R">r</a>
-         </dd>
-         <dd>
-            <a href="#http://www.geonames.org/ontology#featureCode" title="http://www.geonames.org/ontology#featureCode">código del fenómeno</a>
-            <sup class="type-op" title="object property">op</sup> 
-            <span class="logic">value</span> 
-            <a href="#http://www.geonames.org/ontology#R.ST" title="http://www.geonames.org/ontology#R.ST">r. s t</a>
          </dd>
          <dt>is in domain of</dt>
          <dd>
@@ -237,6 +219,10 @@ Por esta razón, se utiliza geonames:R.ST como valor principal de la propiedad g
       <li>
          <a href="#tramoVia"
             title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#tramoVia">pertenece al tramo de vía</a>
+      </li>
+      <li>
+         <a href="#portal"
+            title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#portal">portal</a>
       </li>
       <li>
          <a href="#tipoVia"
@@ -464,6 +450,27 @@ Por esta razón, se utiliza geonames:R.ST como valor principal de la propiedad g
          </dl>
       </div>
    </div>
+   <div class="entity" id="portal">
+      <h3>portal<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#portal</p>
+      <div class="comment">
+         <span class="markdown">Propiedad que permite relacionar cualquier elemento (por ejemplo, un local comercial) con un portal</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Portal"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Portal">Portal</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="tipoVia">
       <h3>tipo de vía<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -500,7 +507,7 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
       </div>
    </div>
 </div><div id="dataproperties">
-   <h3 id="dataproperties" class="list">Data Properties</h3>
+   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
    <ul class="hlist">
       <li>
          <a href="#http://www.geonames.org/ontology#name" title="http://www.geonames.org/ontology#name">nombre internacional</a>
@@ -675,3 +682,4 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
 <sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
 </div>
 </div>
+</html>

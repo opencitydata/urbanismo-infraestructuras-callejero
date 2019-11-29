@@ -1,40 +1,42 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#"
      xml:base="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
+     xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero">
-        <owl:versionIRI rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero_v0.3"/>
+        <owl:versionIRI rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero_v0.3.1"/>
         <ns:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jesús Vera (Ayuntamiento de Pamplona)</dc:creator>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Manuel Tobarra (Ayuntamiento de Albacete)</dc:creator>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">María Jesús Fernández (Ayuntamiento de Zaragoza)</dc:creator>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oscar Corcho (Ontology Engineering Group, Universidad Politécnica de Madrid)</dc:creator>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Víctor Morlán (Ayuntamiento de Zaragoza)</dc:creator>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-04-28</dc:date>
-        <dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero</dc:identifier>
-        <dc:rights rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Creative Commons Attribution 4.0 International (CC BY 4.0)</dc:rights>
+        <dc:creator>Jesús Vera (Ayuntamiento de Pamplona)</dc:creator>
+        <dc:creator>Manuel Tobarra (Ayuntamiento de Albacete)</dc:creator>
+        <dc:creator>María Jesús Fernández (Ayuntamiento de Zaragoza)</dc:creator>
+        <dc:creator>Oscar Corcho (Ontology Engineering Group, Universidad Politécnica de Madrid)</dc:creator>
+        <dc:creator>Víctor Morlán (Ayuntamiento de Zaragoza)</dc:creator>
+        <dc:date>2014-04-28</dc:date>
+        <dc:description xml:lang="es">Este vocabulario se utiliza para la descripción del callejero de una ciudad. Reutiliza términos de varios vocabularios que actualmente se utilizan para propósitos similares, incluyendo:
+- schema.org
+- GeoSPARQL
+- GeoNames
+- Unidades territoriales en España</dc:description>
+        <dc:identifier>http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero</dc:identifier>
+        <dc:rights>Creative Commons Attribution 4.0 International (CC BY 4.0)</dc:rights>
         <dc:title xml:lang="es">Vocabulario para la representación de datos de un callejero</dc:title>
         <terms:hasFormat rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero.html"/>
-        <terms:hasFormat rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero.owl"/>
-        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-04-28</terms:issued>
-        <terms:replaces rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero_20140321"/>
+        <terms:issued>2014-04-28</terms:issued>
         <vann:preferredNamespaceUri rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">Este vocabulario se utiliza para la descripción del callejero de una ciudad. Reutiliza términos de varios vocabularios que actualmente se utilizan para propósitos similares, incluyendo:
+        <rdfs:comment xml:lang="es">Este vocabulario se utiliza para la descripción del callejero de una ciudad. Reutiliza términos de varios vocabularios que actualmente se utilizan para propósitos similares, incluyendo:
 - schema.org
 - GeoSPARQL
 - GeoNames
 - Unidades territoriales en España
 Asimismo, se actualizará de acuerdo con la evolución de estos vocabularios (especialmente los que están en pleno desarrollo en el momento de creación de este vocabulario, como el vocabulario sobre unidades territoriales en España) y se tendrá en cuenta en el futuro el trabajo que se desarrolle en el grupo del W3C denominado Location And Addresses Community Group (http://www.w3.org/community/locadd/).
-Este vocabulario también se ha inspirado en el trabajo realizado previamente por la Fundación CTIC en el año 2010 en su ontología de localización (http://purl.org/ctic/infraestructuras/localizacion)
-		</rdfs:comment>
+Este vocabulario también se ha inspirado en el trabajo realizado previamente por la Fundación CTIC en el año 2010 en su ontología de localización (http://purl.org/ctic/infraestructuras/localizacion)</rdfs:comment>
     </owl:Ontology>
     
 
@@ -51,10 +53,73 @@ Este vocabulario también se ha inspirado en el trabajo realizado previamente po
     
 
 
+    <!-- http://creativecommons.org/ns#license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/identifier -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/identifier"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/rights -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/hasFormat -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/hasFormat"/>
+    
+
+
     <!-- http://purl.org/dc/terms/issued -->
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
     
 
 
@@ -103,7 +168,7 @@ Este vocabulario también se ha inspirado en el trabajo realizado previamente po
 
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#contienePortal">
         <rdfs:subPropertyOf rdf:resource="http://www.opengis.net/ont/geosparql#sfContains"/>
-        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2014-03-28</terms:issued>
+        <terms:issued>2014-03-28</terms:issued>
         <rdfs:comment rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero"/>
         <rdfs:comment xml:lang="es">Portal que un fenómeno geográfico contiene (por ejemplo, una vía o un tramo de vía, aunque también puede ser un barrio, distrito, ciudad, etc.)</rdfs:comment>
         <rdfs:label xml:lang="es">contiene portal</rdfs:label>
@@ -117,7 +182,7 @@ Este vocabulario también se ha inspirado en el trabajo realizado previamente po
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#contieneTramoVia">
         <rdfs:subPropertyOf rdf:resource="http://www.opengis.net/ont/geosparql#sfContains"/>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#TramoVia"/>
-        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2014-03-28</terms:issued>
+        <terms:issued>2014-03-28</terms:issued>
         <rdfs:comment xml:lang="es">Tramo de vía que un fenómeno geográfico contiene (por ejemplo, una vía, aunque también puede ser un barrio, distrito, ciudad, etc.)</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero"/>
         <rdfs:label xml:lang="es">contiene tramo de vía</rdfs:label>
@@ -130,7 +195,7 @@ Este vocabulario también se ha inspirado en el trabajo realizado previamente po
 
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#contieneVia">
         <rdfs:subPropertyOf rdf:resource="http://www.opengis.net/ont/geosparql#sfContains"/>
-        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2014-03-28</terms:issued>
+        <terms:issued>2014-03-28</terms:issued>
         <rdfs:comment xml:lang="es">Vía que un fenómeno geográfico contiene (por ejemplo, un barrio, distrito, ciudad, etc.)</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero"/>
         <rdfs:label xml:lang="es">contiene vía</rdfs:label>
@@ -143,10 +208,21 @@ Este vocabulario también se ha inspirado en el trabajo realizado previamente po
 
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#dedicadoA">
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via"/>
-        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2014-03-28</terms:issued>
+        <terms:issued>2014-03-28</terms:issued>
         <rdfs:comment xml:lang="es">Una calle puede estar dedicada a un evento, personaje, película, etc.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero"/>
         <rdfs:label xml:lang="es">dedicado a</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#portal -->
+
+
+    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#portal">
+        <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Portal"/>
+        <rdfs:comment xml:lang="es">Propiedad que permite relacionar cualquier elemento (por ejemplo, un local comercial) con un portal</rdfs:comment>
+        <rdfs:label xml:lang="es">portal</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -174,7 +250,7 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#tramoVia">
         <rdfs:subPropertyOf rdf:resource="http://www.opengis.net/ont/geosparql#sfWithin"/>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#TramoVia"/>
-        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2014-03-28</terms:issued>
+        <terms:issued>2014-03-28</terms:issued>
         <rdfs:comment xml:lang="es">Tramo de vía al que pertenece un fenómeno (por ejemplo, una dirección, un portal, etc.)</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero"/>
         <rdfs:label xml:lang="es">pertenece al tramo de vía</rdfs:label>
@@ -188,7 +264,7 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#via">
         <rdfs:subPropertyOf rdf:resource="http://www.opengis.net/ont/geosparql#sfWithin"/>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via"/>
-        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2014-03-28</terms:issued>
+        <terms:issued>2014-03-28</terms:issued>
         <rdfs:comment xml:lang="es">Vía a la que pertenece un fenómeno (por ejemplo, una dirección, un tramo de vía, un portal, etc.)</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero"/>
         <rdfs:label xml:lang="es">pertenece a la vía</rdfs:label>
@@ -252,7 +328,7 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
     <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#numeroFinTramo">
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#TramoVia"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2014-03-28</terms:issued>
+        <terms:issued>2014-03-28</terms:issued>
         <rdfs:comment xml:lang="es">Número de la vía donde finaliza el tramo. Un tramo puede tener uno o dos números finales. Puede indicar el par y el impar del tramo de la calle. Puede tener el valor &quot;FINAL&quot;, para indicar que el tramo acaba al final de la calle.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero"/>
         <rdfs:label xml:lang="es">Número final del tramo de vía</rdfs:label>
@@ -266,7 +342,7 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
     <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#numeroInicioTramo">
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#TramoVia"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2014-03-28</terms:issued>
+        <terms:issued>2014-03-28</terms:issued>
         <rdfs:comment xml:lang="es">Número de la vía donde comienza el tramo. Un tramo puede tener uno o dos números iniciales. Puede indicar el par y el impar del tramo de la calle.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero"/>
         <rdfs:label xml:lang="es">Número inicial del tramo de vía</rdfs:label>
@@ -430,15 +506,15 @@ Por esta razón, se utiliza geonames:R.ST como valor principal de la propiedad g
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     </owl:NamedIndividual>
     <rdf:Description>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RDF</rdfs:label>
+        <rdfs:label>HTML</rdfs:label>
     </rdf:Description>
     <rdf:Description>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HTML</rdfs:label>
+        <rdfs:label>RDF</rdfs:label>
     </rdf:Description>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/ -->
+<!-- Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/ -->
 
 

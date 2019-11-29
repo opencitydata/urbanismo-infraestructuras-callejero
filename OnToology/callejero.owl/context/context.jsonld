@@ -66,6 +66,10 @@
     "isDefinedBy" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
     },
+    "portal" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#portal",
+      "@type" : "@id"
+    },
     "sfContains" : {
       "@id" : "http://www.opengis.net/ont/geosparql#sfContains",
       "@type" : "@id"
@@ -99,9 +103,6 @@
     "date" : {
       "@id" : "http://purl.org/dc/elements/1.1/date"
     },
-    "replaces" : {
-      "@id" : "http://purl.org/dc/terms/replaces"
-    },
     "numeroInicioTramo" : {
       "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#numeroInicioTramo",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
@@ -115,6 +116,9 @@
     },
     "hasFormat" : {
       "@id" : "http://purl.org/dc/terms/hasFormat"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
     },
     "preferredNamespaceUri" : {
       "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
