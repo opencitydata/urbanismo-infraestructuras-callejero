@@ -22,24 +22,24 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero">
-        <owl:versionIRI rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero_v0.3.1"/>
+        <owl:versionIRI rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero/0.3.2"/>
         <dc:creator>María Jesús Fernández (Ayuntamiento de Zaragoza)</dc:creator>
         <dc:description xml:lang="es">Este vocabulario se utiliza para la descripción del callejero de una ciudad. Reutiliza términos de varios vocabularios que actualmente se utilizan para propósitos similares, incluyendo:
 - schema.org
 - GeoSPARQL
 - GeoNames
 - Unidades territoriales en España</dc:description>
-        <cc:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <rdfs:comment xml:lang="es">Este vocabulario se utiliza para la descripción del callejero de una ciudad. Reutiliza términos de varios vocabularios que actualmente se utilizan para propósitos similares, incluyendo:
 - schema.org
 - GeoSPARQL
 - GeoNames
 - Unidades territoriales en España
-Asimismo, se actualizará de acuerdo con la evolución de estos vocabularios (especialmente los que están en pleno desarrollo en el momento de creación de este vocabulario, como el vocabulario sobre unidades territoriales en España) y se tendrá en cuenta en el futuro el trabajo que se desarrolle en el grupo del W3C denominado Location And Addresses Community Group (http://www.w3.org/community/locadd/).
+Asimismo, se actualizará de acuerdo con la evolución de estos vocabularios  y se tendrá en cuenta el trabajo desarrollado en el grupo del W3C denominado Location And Addresses Community Group (http://www.w3.org/community/locadd/).
 Este vocabulario también se ha inspirado en el trabajo realizado previamente por la Fundación CTIC en el año 2010 en su ontología de localización (http://purl.org/ctic/infraestructuras/localizacion)</rdfs:comment>
-        <dc:date>2014-04-28</dc:date>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:issued>2014-04-28</dcterms:issued>
         <dc:identifier>http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero</dc:identifier>
+        <dc:date>2020-01-16</dc:date>
         <dc:creator>Jesús Vera (Ayuntamiento de Pamplona)</dc:creator>
         <dcterms:hasFormat rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero.owl"/>
         <dcterms:hasFormat rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero.html"/>
@@ -157,6 +157,7 @@ Este vocabulario también se ha inspirado en el trabajo realizado previamente po
     <!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#portal -->
 
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#portal">
+        <rdfs:subPropertyOf rdf:resource="http://www.opengis.net/ont/geosparql#sfWithin"/>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Portal"/>
         <dcterms:issued>2019-11-29</dcterms:issued>
         <rdfs:comment xml:lang="es">Propiedad que permite relacionar cualquier elemento (por ejemplo, un local comercial) con un portal</rdfs:comment>
@@ -279,13 +280,26 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
     
 
 
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#particula -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#particula">
+        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dcterms:issued>2020-01-16</dcterms:issued>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero"/>
+        <rdfs:isDefinedBy xml:lang="es">Partícula de la denominación de la vía, en caso de que exista y se desee representar. Por ejemplo, se suelen utilizar como partículas elementos como de, de la, del, etc.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="es">partícula</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.geonames.org/ontology#name -->
 
     <owl:DatatypeProperty rdf:about="http://www.geonames.org/ontology#name">
         <rdfs:domain rdf:resource="http://www.geonames.org/ontology#Feature"/>
         <rdfs:comment xml:lang="es">El nombre con el que se conoce internacionalmente este fenómeno geográfico. No lleva asociado un valor para xml:lang</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.geonames.org/ontology"/>
-        <rdfs:label xml:lang="es">nombre internacional</rdfs:label>
+        <rdfs:label xml:lang="es">nombre</rdfs:label>
     </owl:DatatypeProperty>
     
 
