@@ -14,37 +14,6 @@ Por tanto, se pretende con esto llevar un control de cambios entre versiones.
 * [12/05/2018] Reorganización de carpetas
 * [18/05/2018] Regenerada la documentación que estaba publicada [[Actualización de documentación]](https://github.com/opencitydata/urbanismo-infraestructuras-callejero/commit/bcf39cc760f9098242c124fe79cb26fd577e9c66)
 * [29/11/2019] Añadida una propiedad para hacer referencia a portales desde cualquier elemento, así como la clase PseudoVia, y actualizadas las clases y propiedades relacionadas con los tramos de vía, para referirse de manera general a Tramo
+* [16/01/2020] Se ha añadido la propiedad partícula para hacer referencia (si se considera adecuado) a las partículas relacionadas con las vías
 
-
-A continuación se muestran también los datos originales obtenidos del grupo de trabajo OjoAlData100, que identificó este vocabulario como uno de los prioritarios.
-
-### Núm
-163
-### Clasificación NTI
-Urbanismo e infraestructuras
-### Clasificación NTI (Descripción)
-Saneamiento público, Construcción (infraestructuras, equipamientos públicos)
-### Conjunto de datos
-Callejero (Viales, Numeraciones, Tramero, etc.)
-### Comentarios
-Norma UNE 178301:2015
-### Valor (De 1 peor a 5 mejor)
-5
-### Transparencia
-no
-### Descripción
-Dataset que incluye el callejero de la cudad
-### Ejemplo
-http://datos.madrid.es/portal/site/egob/menuitem.c05c1f754a33a9fbe4b2e4b284f1a5a0/?vgnextoid=b3c41f3cf6a6c410VgnVCM2000000c205a0aRCRD&vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD
-### Campos minimos
-Numero de id, denominacion de la calle, tipo de calle (calle, avenida, paseo, bulevar, etc), numeración, geolocalización de cada número, geolocalización de la calle, peatonal o no, barrio o distrito, ¿clasificación económica?, sentido de la circulación
-### Tamaño de ciudad
-todas
-### Tipo ciudad (costa, montaña, capital de provincia, …etc)
-De cada uno de los municipios con el menor decalaje en las actualizaciones.
-### Frec. Actualización minima
-Tiempo real
-### Histórico relevante
-Si
-
-Este vocabulario está siendo utilizado en el contexto de la actuación sobre datos abiertos del proyecto "Plataforma de Gobierno Abierto, Colaborativa e Interoperable" (http://www.red.es/redes/es/que-hacemos/ciudades-inteligentes/proyectos-en-ciudades). Dentro de los objetivos específicos de este proyecto no se encuentra el desarrollo, actualización o validación de este vocabulario, aunque no se descarta que puedan realizarse cambios cuando los conjuntos de datos correspondientes tengan que ser expuestos por medio de la API de datos abiertos que se está desarrollando en el proyecto.
+Este vocabulario está siendo utilizado en el contexto de la actuación sobre datos abiertos del proyecto "Plataforma de Gobierno Abierto, Colaborativa e Interoperable" (http://www.red.es/redes/es/que-hacemos/ciudades-inteligentes/proyectos-en-ciudades). Dentro de los objetivos específicos de este proyecto no se encuentra el desarrollo, actualización o validación de este vocabulario, aunque no se descarta que puedan realizarse cambios cuando los conjuntos de datos correspondientes tengan que ser expuestos por medio de la API de datos abiertos que se está desarrollando en el proyecto. Algunas de estas modificaciones están siendo financiadas por el proyecto europeo H2020 StandICT.eu.
